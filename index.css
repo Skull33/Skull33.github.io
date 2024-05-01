@@ -2,7 +2,32 @@ body
 {
     background-color: red;
 }
+.titulocuadro
+{
+    background-color: black;
+    padding: 50px;
+    text-align: center;
+}
+.sedgwick-ave-display-regular 
+{
+    font-family: "Sedgwick Ave Display", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
 h1
 {
-    text-align: center;
+    color: white;
+    font-size: 80px;
+    margin: 0;
+}
+h1 span
+{
+    color: red;
+    font-size: 128px;
+    margin: 0;
+}
+.imgSS
+{
+    height: 250px;
+    width: 250px;
 }
