@@ -1,16 +1,22 @@
 body
 {
-    background-color: red;
+    background-color: black;
 }
 .titulocuadro
 {
-    background-color: black;
+    background-color: red;
     padding: 50px;
     text-align: center;
 }
 .sedgwick-ave-display-regular 
 {
     font-family: "Sedgwick Ave Display", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+.permanent-marker-regular 
+{
+    font-family: "Permanent Marker", cursive;
     font-weight: 400;
     font-style: normal;
 }
@@ -25,6 +31,41 @@ h1 span
     color: red;
     font-size: 128px;
     margin: 0;
+}
+h2
+{
+    color: white;
+    font-size: 50px;
+    margin: 0;
+}
+h2 span
+{
+    color: white;
+    font-size: 72px;
+    margin: 0;
+}
+h3
+{
+    color: greenyellow;
+    font-size: 16px;
+    margin: 0;
+}
+h3 span
+{
+    color: green;
+    font-size: 25px;
+    margin: 0;
+}
+p
+{
+    color: black;
+    font-size: 32px;
+    margin: 0;
+}
+.contenedor
+{
+    display: flex;
+    align-items: center;
 }
 .imgSS
 {
