@@ -13,6 +13,14 @@ body
 {
     display: flex;
 }
+.seccion
+{
+    display: none;
+}
+.activo
+{
+    display: block;
+}
 .singlebutton
 {
     position: relative;
@@ -116,12 +124,4 @@ p
     font-family: 'interact', sans-serif;
     font-size: 30px;
     color: white;
-}
-.seccion
-{
-    display: none;
-}
-.activo
-{
-    display: block;
 }

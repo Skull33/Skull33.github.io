@@ -25,3 +25,22 @@ window.addEventListener('load', function()
         });
     });
 });
+function mostrarseccion(seccionId)
+{
+    var secciones = document.querySelectorAll('.seccion');
+    secciones.forEach(function(seccion)
+    {
+        seccion.classList.remove('activo');
+    });
+    var seccionobj = document.getElementById(seccionId);
+    seccionobj.classList.add('activo');
+}
+document.addEventListener('DOMContentLoaded', function()
+{
+    var secciones = document.querySelectorAll('.seccion');
+    secciones.forEach(function(seccion)
+    {
+        seccion.classList.remove('activo');
+    });
+    document.getElementById('paginamain').classList.add('activo');
+});
