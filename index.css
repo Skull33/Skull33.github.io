@@ -117,3 +117,11 @@ p
     font-size: 30px;
     color: white;
 }
+.seccion
+{
+    display: none;
+}
+.activo
+{
+    display: block;
+}
