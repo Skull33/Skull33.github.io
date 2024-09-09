@@ -1,5 +1,5 @@
-CREATE DATABASE SSdatabase;
-USE SSdatabase;
+CREATE DATABASE ssdatabase;
+USE ssdatabase;
 
 CREATE TABLE users(
     id INT(11) AUTO_INCREMENT PRIMARY KEY;
