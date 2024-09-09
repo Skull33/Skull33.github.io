@@ -18,8 +18,8 @@
                     <h1 class="Mayusculas">SkullStudios</h1>
                     <div class="buttons">
                         <div>
-                            <button class="botonregistro">
-                                <h3 class="Mayusculas3">Sign-In</h3>
+                            <button onclick="mostrarseccion('signup_modal')" class="botonregistro">
+                                <h3 class="Mayusculas3">Sign-Up</h3>
                             </button>
                             <button class="botoninicio">
                                 <h3 class="Mayusculas3">Log-In</h3>
@@ -40,18 +40,33 @@
                     <p class="contenedor">
                         <h3 class=" Mayusculas1">Somos una desarrolladora "INDIE" de videojuegos iniciada en Arequipa-Peru,
                             buscamos crear una comunidad más grande de creadores, que se pierda el
-                            miedo a crear y poder crecer como desarrolladores, esto es SkullStudios.
+                            miedo a publicar y poder crecer como desarrolladores, esto es SkullStudios.
                         </h3>
                     </p>
-                    <script src="complemento_index.js"></script>
                 </div>
+                <p><h2 class="Mayusculas2">Miembros del Studio</h2></p>
+                <div class="miembro">
+                    <img class="imagencirculo" src="images/skeleton perfil.png" style="width: 128px; height: 128px">
+                    <div class="info_member">
+                        <li><h3 class="Mayusculas4">Cuela Rodríguez Alonzo</h3></li>
+                        <li><h3 class="Mayusculas4">Alias: Dnursaurio</h3></li>
+                        <li><h3 class="Mayusculas4">Rango en el Studio: Fundador</h3></li>
+                        <li>
+                            <h3 class="Mayusculas4">Cargo en el Studio:</h3>
+                            <ul ><h5 class="Mayusculas4">Programador</h5></ul>
+                            <ul><h5 class="Mayusculas4">Diseñador Creativo</h5></ul>
+                            <ul><h5 class="Mayusculas4">Diseñador gráfico (Amateur)</h5></ul>
+                        </li>
+                    </div>
+                </div>
+                
             </div>
             <div id="Proyecto" class="seccion">
                 <div class="titulocuadro">
                     <h1 class="Mayusculas">Proyectos</h1>
                     <div class="buttons">
                         <button class="botonregistro">
-                            <h3 class="Mayusculas3">Sign-In</h3>
+                            <h3 class="Mayusculas3">Sign-Up</h3>
                         </button>
                         <button class="botoninicio">
                             <h3 class="Mayusculas3">Log-In</h3>
@@ -72,7 +87,7 @@
                     <h1 class="Mayusculas">Nuestras Redes</h1>
                     <div class="buttons">
                         <button class="botonregistro">
-                            <h3 class="Mayusculas3">Sign-In</h3>
+                            <h3 class="Mayusculas3">Sign-Up</h3>
                         </button>
                         <button class="botoninicio">
                             <h3 class="Mayusculas3">Log-In</h3>
@@ -85,6 +100,28 @@
                                 <h2 class="Mayusculas2">Proyectos</h2>
                             </button>
                         </div>
+                    </div>
+                </div>
+            </div>
+            <div id="signup_modal" class="seccion">
+                <div class="modal">
+                    <div class="modal_contenido">
+                        <h2 class="Mayusculas5">Registro</h2>
+                        <form action="C:\xampp\htdocs\database\signupform.php" method="post">
+                            <label for="nombre">Nombre</label><br>
+                            <input type="text" id="nombre" name="nombre" required><br><br>
+
+                            <label for="correo">E-mail</label><br>
+                            <input type="text" name="correo" id="correo" required><br><br>
+
+                            <label for="nombre_usuario">Nombre de Usuario</label><br>
+                            <input type="text" name="nombre_usuario" id="nombre_usuario" required><br><br>
+
+                            <label for="contraseña">Crear Contraseña</label><br>
+                            <input type="text" id="contraseña" name="contraseña" required><br><br>
+
+                            <button type="submit" class="boton_enviar"><h3 class="Mayusculas4">Crear Cuenta</h3></button>
+                        </form>
                     </div>
                 </div>
             </div>

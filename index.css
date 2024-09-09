@@ -158,6 +158,15 @@ body
     font-family: 'registro';
     src: url('fuentes/Vollome.ttf') format('truetype');
 }
+@font-face {
+    font-family: 'Titulos';
+    src: url('fuentes/iknowaghost.ttf') format('truetype');
+}
+@font-face 
+{
+    font-family: 'forms';
+    src: url('fuentes/SedgwickAveDisplay-Regular.ttf') format('truetype');
+}
 p
 {
     color: black;
@@ -197,4 +206,78 @@ p
     font-family: 'registro', sans-serif;
     font-size: 25px;
     color: black;
+}
+.Mayusculas4
+{
+    font-family: 'Titulos', sans-serif;
+    font-size: 20px;
+    color: orange;
+    margin: 0;
+}
+.Mayusculas5
+{
+    font-family: 'forms', sans-serif;
+    font-size: 32px;
+    color: grey;
+    margin: 0;
+}
+.imagencirculo
+{
+    border-radius: 100%;
+}
+.miembro
+{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.info_member
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.modal
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+.modal_contenido
+{
+    background-color: white;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+}
+.boton_enviar
+{
+    width: 100%;
+    padding: 12px;
+    background-color: greenyellow;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3 ease;
+}
+.boton_enviar:hover
+{
+    background-color: green;
+}
+.boton_enviar:active
+{
+    background-color: aqua;
+}
+.boton_enviar:disabled
+{
+    background-color: gray;
+    cursor: not-allowed;
 }

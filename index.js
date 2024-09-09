@@ -4,6 +4,8 @@ window.addEventListener('load', function()
     var elementos1 = document.querySelectorAll('.Mayusculas1');
     var elementos2 = document.querySelectorAll('.Mayusculas2');
     var elementos3 = document.querySelectorAll('.Mayusculas3');
+    var elementos4 = document.querySelectorAll('.Mayusculas4');
+    var elementos5 = document.querySelectorAll('.Mayusculas5');
     elementos.forEach(function(elemento)
     {
         elemento.innerHTML = elemento.innerHTML.replace(/[A-ZÁÉÍÓÚÜÑ]/g, function(match)
@@ -28,6 +30,20 @@ window.addEventListener('load', function()
     elementos3.forEach(function(elemento3)
     {
         elemento3.innerHTML = elemento3.innerHTML.replace(/[A-ZÁÉÍÓÚÜÑ]/g, function(match)
+        {
+            return '<span style="color: orange;">' + match + '</span>';
+        });
+    });
+    elementos4.forEach(function(elemento4)
+    {
+        elemento4.innerHTML = elemento4.innerHTML.replace(/[A-ZÁÉÍÓÚÜÑ]/g, function(match)
+        {
+            return '<span style="color: #ffffff;">' + match + '</span>';
+        });
+    });
+    elementos5.forEach(function(elemento5)
+    {
+        elemento5.innerHTML = elemento5.innerHTML.replace(/[A-ZÁÉÍÓÚÜÑ]/g, function(match)
         {
             return '<span style="color: orange;">' + match + '</span>';
         });
