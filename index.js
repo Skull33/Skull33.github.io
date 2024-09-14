@@ -68,3 +68,25 @@ document.addEventListener('DOMContentLoaded', function()
     });
     document.getElementById('paginamain').classList.add('activo');
 });
+
+document.getElementById('register_form').addEventListener('submit',function(evento)
+{
+    evento.preventDefault();
+
+    const formData = new FormData(this);
+
+    fetch('database/singupform.php',
+    {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => response.text())
+    .then(data =>
+    {
+        document.getElementById('mensaje_rpta').innerHTML = data;
+    })
+    .catch(error =>
+    {
+        document.getElementById('mensaje_rpta').innerHTML = 'Error en el formulario, envialo otra vez';
+    });
+});

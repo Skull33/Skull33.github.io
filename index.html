@@ -111,7 +111,7 @@
                 <div class="modal">
                     <div class="modal_contenido">
                         <h2 class="Mayusculas5">Registro</h2>
-                        <form action="database\signupform.php" method="get">
+                        <form id="register_form">
                             <label for="nombre">Nombre</label><br>
                             <input type="text" id="nombre" name="nombre" required><br><br>
 
@@ -124,8 +124,9 @@
                             <label for="contraseña">Crear Contraseña</label><br>
                             <input type="text" id="contraseña" name="contraseña" required><br><br>
 
-                            <button type="submit" class="boton_enviar"><h3 class="Mayusculas4">Crear Cuenta</h3></button>
+                            <button onclick="mostrarseccion('paginamain')" type="submit" class="boton_enviar"><h3 class="Mayusculas4">Crear Cuenta</h3></button>
                         </form>
+                        <div id="mensaje_rpta"></div>
                     </div>
                 </div>
             </div>
